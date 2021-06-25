@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script type="text/javascript">
-function chgimg(x)
-{
-i1.src=x;
-}
-</script>
+    <link rel="stylesheet" type="text/css" href="Style/CSS/index.css">
+    
+    <script type="text/javascript">
+        function chgimg(x,id) {
+            document.getElementById(id).disabled = true;
+            document.getElementById(id).style.backgroundColor = 'Grey';
+            document.getElementById(id).style.color = 'Black';
+            i1.src = x;
+        }
+    </script>
 </head>
-<body>
-<center>
-<h2>INAUGURATION OF IDEEEAS 2021</h2>
-<img id="i1" src="l1.png"  /><br>
-<b>CLICK THE BUTTON TO LIGHT THE LAMP</b><br><br>
-<input type="button" value="ChiefGuest1" onclick="chgimg('l2.png')" />
-<input type="button" value="ChiefGuest2" onclick="chgimg('l3.png')" />
-<input type="button" value="ChiefGuest3" onclick="chgimg('l4.png')" />
-<input type="button" value="ChiefGuest4" onclick="chgimg('l5.png')" /><br>
-<input type="button" value="Reset" onclick="chgimg('l1.png')" />
-</center>
+
+<body background="Lamp_images/bg.png"
+    style=" background-position: center;background-repeat: no-repeat; background-size: 100%">
+    <center>
+        <div class="main">
+            <div class="logos">
+                <img src="Lamp_images/mainlogo3.png" alt="Logos">
+            </div>
+            <div class="Heading">
+                <h2>INAUGURATION OF IdEEEas 2021</h2>
+            </div>
+            <div class="mainsection">
+                <div class="guests">
+                    <div class="left1">
+                        <div class="buttons">
+                            <button id="btn1" class="btn person1" onclick="chgimg('Lamp_images/l2rbg.png',id)">Dr. Shivakumaraiah</button>
+                        </div>
+                    </div>
+                    <div class="left2">
+                        <div class="buttons">
+                            <button id="btn2" class="btn person2" onclick="chgimg('Lamp_images/l3rbg.png',id)">Dr. S V Dinesh</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Lampimages">
+                    <img id="i1" src="Lamp_images/l1rbg.png" class="center"><br><br>
+                    <b>CLICK ON THE GUEST NAMES TO LIGHT THE LAMP</b><br><br>
+                </div>
+                <div class="guests">
+                    <div class="left1">
+                        <div class="buttons">
+                            <button id="btn3" class="btn person3" onclick="chgimg('Lamp_images/l4rbg.png',id)">A T Kishore</button>
+                        </div>
+                    </div>
+                    <div class="left1">
+                        <div class="buttons">
+                            <button id="btn4" class="btn person4" onclick="chgimg('Lamp_images/l5rbg.png',id)">IEEE Team</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons" style="font-size: small;">
+                <button id="btn5" class="btn reset" onclick="location.reload();">Reset</button>
+            </div>
+        </div>
+    </center>
+
 </body>
+
 </html>

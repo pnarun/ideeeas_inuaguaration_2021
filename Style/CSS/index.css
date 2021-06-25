@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.main .Heading h2{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    
+}
+
+.main .TextInfo b{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: small;
+}
+
+.main .buttons .btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: inherit;
+    /* padding: 14px 28px; */
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.main .buttons .btn:hover {background: #eee;}
+  
+.person1 {border-color: #04AA6D;color: green;}
+.main .buttons .person2 {border-color: #2196F3;color: dodgerblue;}
+.main .buttons .person3 {border-color: #ff9800;color: orange;}
+.main .buttons .person4 {border-color: #000000;color: black;}
+.main .buttons .reset {border-color: #ffffff;color: white;}
+
+.logos img{
+    width: 70%;
+    height: 2%;
+}
+
+.Lampimages img{
+    width: 80%;
+}
+
+.mainsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.mainsection .guests{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* row-gap: 3px; */
+}
